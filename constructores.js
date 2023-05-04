@@ -14,4 +14,12 @@ class Cliente {
     }
 }
 
+class Reserva {
+    entrada;
+    salida;
 
+    constructor (entrada, salida) {
+        this.entrada = entrada;
+        this.salida = salida;
+    }
+}
