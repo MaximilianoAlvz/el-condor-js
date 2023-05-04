@@ -40,4 +40,14 @@ if (cambiarDato == "si") {
 
 alert ("Hola " + cliente1.nombre + " reserva ahora tus vacaciones!");
 agendarFecha();
-console.log(reserva);
+
+let cambiarReserva = prompt ("su reserva quedo fijada para " + reserva[0].entrada + " ¿quieres cambiarla? si/no").toLocaleLowerCase();
+let confCambiarReserva;
+
+if (cambiarReserva = "si") {
+    do {
+        reserva.splice(0,1);
+        agendarFecha();
+        confCambiarReserva = prompt ("su reserva quedo fijada para " + reserva[0].entrada + "¿quieres cambiarla? si/no").toLocaleLowerCase();
+    } while (confCambiarReserva != "no");
+}
